@@ -24,6 +24,17 @@ The server will be started on the port specified by the `PORT` environment
 variable, or 3000 if not specified.
 
 
+http endpoints
+================================================================================
+
+Some example links when running the server on port 3000, for Apex, NC:
+
+- http://localhost:3000/api/v1/astro/info?location=35.70539,-78.7963
+- http://localhost:3000/api/v1/forecast/summary?location=35.70539,-78.7963
+- http://localhost:3000/api/v1/forecast/time-series?location=35.70539,-78.7963
+- http://localhost:3000/api/v1/location/info?location=35.70539,-78.7963
+
+
 license
 ================================================================================
 

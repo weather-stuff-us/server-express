@@ -1,0 +1,52 @@
+{
+  "name": "@weather-stuff-us/server-express",
+  "version": "0.0.0",
+  "description": "express server for weather-stuff-us",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "homepage": "https://github.com/weather-stuff-us/server-express",
+  "main": "weather-stuff-us.js",
+  "scripts": {
+    "check-deps": "tools/check-deps.sh",
+    "standard": "standard --verbose",
+    "start": "node server.js",
+    "utest": "tap test/test-*.js",
+    "test": "standard --verbose && npm -s run utest",
+    "watch": "nodemon --exec 'npm run check-deps && standard --verbose && tools/quiet-utest.sh'",
+    "watch-server": "nodemon --exec 'node --inspect=9230 server.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weather-stuff-us/server-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weather-stuff-us/server-express/issues"
+  },
+  "standard": {
+    "ignore": [
+      "/node_modules/",
+      "/tmp/"
+    ]
+  },
+  "dependencies": {
+    "@weather-stuff-us/server-api": "github:weather-stuff-us/server-api",
+    "@weather-stuff-us/server-utils": "github:weather-stuff-us/server-utils",
+    "c3": "^0.6.12",
+    "compression": "^1.7.3",
+    "d3": "^5.7.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "leaflet": "^1.4.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "dependency-check": "^3.3.0",
+    "got": "^9.6.0",
+    "joi": "^14.3.1",
+    "nodemon": "^1.18.9",
+    "p-defer": "^1.0.0",
+    "standard": "^12.0.1",
+    "tap": "^12.4.0"
+  }
+}

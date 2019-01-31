@@ -1,12 +1,15 @@
-@weather-stuff-us/server-express - express server for weather-stuff-us
+express server for weather-stuff-us
 ================================================================================
 
 An express server providing access to weather data via the
 [National Weather Service][].
 
+Part of the [weather-stuff-us][] family of projects.
+
 Weather data is only available for locations in the United States.
 
 [National Weather Service]: https://forecast-v3.weather.gov/documentation
+[weather-stuff-us]: https://weather-stuff-us.github.io/
 
 
 usage

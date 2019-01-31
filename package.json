@@ -31,12 +31,10 @@
   "dependencies": {
     "@weather-stuff-us/server-api": "github:weather-stuff-us/server-api",
     "@weather-stuff-us/server-utils": "github:weather-stuff-us/server-utils",
-    "c3": "^0.6.12",
+    "@weather-stuff-us/web": "github:weather-stuff-us/web",
     "compression": "^1.7.3",
-    "d3": "^5.7.0",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
-    "leaflet": "^1.4.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
